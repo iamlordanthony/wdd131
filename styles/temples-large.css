@@ -1,19 +1,18 @@
-@media screen and (min-width: 768px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    #hamburger {
+/* Larger screen overrides */
+@media (min-width: 768px) {
+    #menuBtn {
         display: none;
     }
 
-    .temple-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: transparent;
+        padding: 0;
     }
 
-    main {
-        max-width: 1000px;
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
