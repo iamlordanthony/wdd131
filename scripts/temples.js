@@ -1,12 +1,15 @@
-// Hamburger menu toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
+// Footer dynamic year and modified date
+document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.getElementById('year');
+    const modSpan = document.getElementById('lastModified');
+    yearSpan.textContent = new Date().getFullYear();
+    modSpan.textContent = document.lastModified;
 
-hamburger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-    hamburger.textContent = navMenu.style.display === 'flex' ? '✖' : '☰';
+    // Hamburger menu
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
 });
-
-// Footer year and last modified
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
