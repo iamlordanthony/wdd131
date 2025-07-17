@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Explore Ghana</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/black_star_square.webp" media="(min-width: 700px)">
+            <img src="images/hero-small.webp" alt="Traditional scene in Ghana">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 238,533 sq km</p>
+            <p><strong>Population:</strong> 34,121,985</p>
+            <p><strong>Capital:</strong> Accra</p>
+            <p><strong>Languages:</strong> English, Akan, Ewe, others</p>
+            <p><strong>Currency:</strong> Ghanaian Cedi</p>
+            <p><strong>Time Zone:</strong> GMT</p>
+            <p><strong>Calling Code:</strong> +233</p>
+            <p><strong>Internet TLD:</strong> .gh</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather_icon.svg" alt="Partly cloudy icon">
+            <p><strong>Temperature:</strong> <span id="temp">28</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🌸 Lord Anthony Senanu 🌸 Ghana, Greater Accra</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
