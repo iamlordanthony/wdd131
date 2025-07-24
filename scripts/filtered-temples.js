@@ -5,35 +5,35 @@ const temples = [
         location: "Salt Lake City, Utah, USA",
         dedicated: "1893-04-06",
         area: 253015,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/87/e5/87e5f2e675ff57b8bd1e95e8756183a550674839/full/320%2C/0/default"
+        imageUrl: "http://t3.gstatic.com/images?q=tbn:ANd9GcRRUL4XWCw4s6ltuV4qLT_4PkAhaAjrkJHElxl55rzzPQF4tQAy"
     },
     {
         templeName: "Cardston Alberta Temple",
         location: "Cardston, Alberta, Canada",
         dedicated: "1923-08-26",
         area: 82000,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/3c/60/3c60d7c8fc383133b5f28c0f67e86f16858c8916/full/320%2C/0/default"
+        imageUrl: "http://t1.gstatic.com/images?q=tbn:ANd9GcSttNfK806p3NRWTKf44bVyjUhDPmB-vQJzPEbF-_UHX3QKcO1_"
     },
     {
         templeName: "Rome Italy Temple",
         location: "Rome, Italy",
         dedicated: "2019-03-10",
         area: 40000,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/88/b8/88b85f48f7b7f3d86a576bc6e022c1b739d7ff67/full/320%2C/0/default"
+        imageUrl: "http://t3.gstatic.com/images?q=tbn:ANd9GcRYyb5Q6KaOMBw2lhlmzv4rQZpigcTfvZ9Zgts1EPDIpyFVGtzm"
     },
     {
         templeName: "Freiberg Germany Temple",
         location: "Freiberg, Germany",
         dedicated: "1985-06-29",
         area: 12000,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/9a/1f/9a1f1ff0a10c8f9e75b7ab1ed121ac8393c7a013/full/320%2C/0/default"
+        imageUrl: "http://t0.gstatic.com/images?q=tbn:ANd9GcQbqKB6Xscx0h7MAmufv0bSEP7-P-BAen4R3UejpKcmFh3BWe2Z"
     },
     {
         templeName: "Kinshasa Democratic Republic of the Congo Temple",
         location: "Kinshasa, DRC",
         dedicated: "2019-04-14",
         area: 10000,
-        imageUrl: "https://www.churchofjesuschrist.org/imgs/54/f5/54f51c1b6ed19c4d658e8cf6ef92f91a4b3d51be/full/320%2C/0/default"
+        imageUrl: "http://t2.gstatic.com/images?q=tbn:ANd9GcQ0ExwzMthAQGvXvnjjTbVAn0nTdezgfBid_cPpGPmyuX-G1CWv"
     }
 ];
 
