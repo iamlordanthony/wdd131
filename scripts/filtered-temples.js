@@ -99,3 +99,9 @@ navLinks.forEach(link => {
 
 // Initial render
 displayTemples(temples);
+
+// Footer dynamic year and modified date
+const yearSpan = document.getElementById("year");
+const modSpan = document.getElementById("lastModified");
+yearSpan.textContent = new Date().getFullYear();
+modSpan.textContent = document.lastModified;
