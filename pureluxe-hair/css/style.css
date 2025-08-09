@@ -1,12 +1,6 @@
-/* ---------- Global Styles ---------- */
-:root {
-    --luxury-gold: #d4af37;
-    --deep-black: #111;
-    --soft-cream: #fdfbf9;
-    --accent-pink: #f5e6e8;
-    --transition-speed: 0.3s;
-}
-
+/* ========================
+   Base Styles
+======================== */
 * {
     margin: 0;
     padding: 0;
@@ -14,55 +8,55 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--soft-cream);
-    color: var(--deep-black);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #fff;
 }
 
-/* ---------- Header ---------- */
+/* ========================
+   Header & Navigation
+======================== */
 header {
-    background-color: var(--deep-black);
-    color: white;
+    background: #fff;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
 }
 
 header .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--luxury-gold);
-    text-decoration: none;
+    height: 60px;
 }
 
-nav ul {
-    display: flex;
+header nav ul {
     list-style: none;
+    display: flex;
+    gap: 1.5rem;
 }
 
-nav ul li {
-    margin-left: 1.5rem;
-}
-
-nav ul li a {
-    color: white;
+header nav ul li a {
     text-decoration: none;
+    color: #333;
     font-weight: 500;
-    transition: color var(--transition-speed);
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: var(--luxury-gold);
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #b87333;
+    /* Copper/Gold tone for luxury feel */
 }
 
-/* ---------- Hero Section ---------- */
+/* ========================
+   Hero Section
+======================== */
 .hero {
-    background: url("../images/hero-banner.jpg") no-repeat center center/cover;
+    background: url('../images/hero/hero-bg.jpg') center/cover no-repeat;
     color: white;
-    padding: 5rem 2rem;
     text-align: center;
+    padding: 6rem 2rem;
 }
 
 .hero h1 {
@@ -75,65 +69,151 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-.btn-primary {
-    background-color: var(--luxury-gold);
-    color: var(--deep-black);
+.btn {
+    display: inline-block;
     padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
+    background: #b87333;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
     font-weight: bold;
-    transition: background var(--transition-speed);
+    transition: background 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #c9a132;
+.btn:hover {
+    background: #a36228;
 }
 
-/* ---------- Product Grid ---------- */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+/* ========================
+   Sections
+======================== */
+section {
     padding: 3rem 2rem;
 }
 
-.product-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform var(--transition-speed);
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
+/* ========================
+   Product Grid
+======================== */
+.product-grid,
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
 }
 
 .product-card img {
     width: 100%;
-    display: block;
-}
-
-.product-card .info {
-    padding: 1rem;
+    height: auto;
 }
 
 .product-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    padding: 0.5rem;
 }
 
 .product-card p {
-    font-size: 1rem;
-    color: var(--luxury-gold);
-    font-weight: 600;
+    padding: 0 0.5rem 1rem;
 }
 
-/* ---------- Footer ---------- */
-footer {
-    background-color: var(--deep-black);
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+/* ========================
+   About Page
+======================== */
+.about-section {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* ========================
+   Contact Page
+======================== */
+.contact-section form {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-section label {
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    background: #b87333;
     color: white;
-    padding: 2rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-section button:hover {
+    background: #a36228;
+}
+
+/* ========================
+   References Page
+======================== */
+.references-section ul {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 1.5rem;
+}
+
+.references-section a {
+    color: #b87333;
+}
+
+/* ========================
+   Footer
+======================== */
+footer {
+    background: #f9f9f9;
+    padding: 1.5rem 2rem;
     text-align: center;
     font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    color: #b87333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

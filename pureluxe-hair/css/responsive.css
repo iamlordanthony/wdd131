@@ -1,31 +1,84 @@
-/* ---------- Tablets ---------- */
-@media (max-width: 992px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+/* ===== Responsive Styles ===== */
 
-/* ---------- Mobile ---------- */
-@media (max-width: 576px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 1rem;
+/* ===== Tablets (max width: 1024px) ===== */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
     }
 
     nav ul li {
+        margin: 0 8px;
+    }
+
+    .container {
+        padding: 1.5rem 0;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 1.5rem;
+    }
+}
+
+/* ===== Mobile (max width: 768px) ===== */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
         margin: 0.5rem 0;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    header {
+        padding: 1rem;
     }
 
-    .product-grid {
-        grid-template-columns: 1fr;
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem 0;
+    }
+
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p,
+    .contact-section p {
+        font-size: 1rem;
+    }
+}
+
+/* ===== Small Mobile (max width: 480px) ===== */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .contact-section button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
 }
