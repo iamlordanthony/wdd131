@@ -1,0 +1,139 @@
+/* ---------- Global Styles ---------- */
+:root {
+    --luxury-gold: #d4af37;
+    --deep-black: #111;
+    --soft-cream: #fdfbf9;
+    --accent-pink: #f5e6e8;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--soft-cream);
+    color: var(--deep-black);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: var(--deep-black);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--luxury-gold);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-speed);
+}
+
+nav ul li a:hover {
+    color: var(--luxury-gold);
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+    background: url("../images/hero-banner.jpg") no-repeat center center/cover;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--luxury-gold);
+    color: var(--deep-black);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background var(--transition-speed);
+}
+
+.btn-primary:hover {
+    background-color: #c9a132;
+}
+
+/* ---------- Product Grid ---------- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+.product-card .info {
+    padding: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: var(--luxury-gold);
+    font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--deep-black);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
