@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Luxury Silk Straight Hair Extensions",
+        "price": 129.99,
+        "image": "images/products/silk-straight.jpg",
+        "description": "Premium 100% human hair extensions with a silky straight finish for a natural and smooth look."
+    },
+    {
+        "id": 2,
+        "name": "PureLuxe Deep Wave Hair Extensions",
+        "price": 139.99,
+        "image": "images/products/deep-wave.jpg",
+        "description": "Beautiful deep wave extensions that add volume and texture, perfect for beachy waves or defined curls."
+    },
+    {
+        "id": 3,
+        "name": "Luxury Body Wave Hair Extensions",
+        "price": 135.00,
+        "image": "images/products/body-wave.jpg",
+        "description": "Soft, bouncy body wave extensions that blend seamlessly with natural hair."
+    },
+    {
+        "id": 4,
+        "name": "PureLuxe Kinky Curly Hair Extensions",
+        "price": 145.50,
+        "image": "images/products/kinky-curly.jpg",
+        "description": "Full and fluffy kinky curly extensions for a bold, voluminous style."
+    },
+    {
+        "id": 5,
+        "name": "Premium Clip-In Extensions",
+        "price": 120.00,
+        "image": "images/products/clip-in.jpg",
+        "description": "Easy-to-use clip-in extensions made from high-quality human hair for instant length and volume."
+    },
+    {
+        "id": 6,
+        "name": "Luxury Lace Front Wig - Straight",
+        "price": 210.00,
+        "image": "images/products/lace-front-straight.jpg",
+        "description": "Handmade lace front wig with silky straight hair for a flawless, natural look."
+    }
+]
