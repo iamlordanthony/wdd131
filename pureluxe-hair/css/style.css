@@ -53,7 +53,7 @@ header nav ul li a.active {
    Hero Section
 ======================== */
 .hero {
-    background: url('../images/hero/hero-bg.jpg') center/cover no-repeat;
+    background: url('../images/hero-bg.jpg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 6rem 2rem;
