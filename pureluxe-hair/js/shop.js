@@ -6,38 +6,25 @@ const products = [
     { id: 4, name: "Raw Luxury Hair 24in", price: 240, image: "images/hair4.jpg" }
 ];
 
-const productGrid = document.querySelector(".product-grid");
-const featuredGrid = document.getElementById("featured-grid");
+const productGrid = document.getElementById("product-grid");
 
-// Load all products for the shop page
+// Load products for shop or home page
 function loadProducts() {
     if (!productGrid) return;
-    productGrid.innerHTML = products.map(product => `
+
+    // If we are on the home page, show first 3 products
+    const isHomePage = document.body.contains(document.querySelector(".featured-products"));
+    const itemsToShow = isHomePage ? products.slice(0, 3) : products;
+
+    productGrid.innerHTML = itemsToShow.map(product => `
         <div class="product-card">
             <img src="${product.image}" alt="${product.name}">
             <div class="info">
                 <h3>${product.name}</h3>
                 <p>$${product.price}</p>
-                <button class="btn-primary" onclick="addToCart(${product.id})">Add to Cart</button>
-            </div>
-        </div>
-    `).join("");
-}
-
-// Load only featured products for the home page
-function loadFeatured() {
-    if (!featuredGrid) return;
-
-    // Select first 3 products as featured
-    const featured = products.slice(0, 3);
-
-    featuredGrid.innerHTML = featured.map(product => `
-        <div class="product-card">
-            <img src="${product.image}" alt="${product.name}">
-            <div class="info">
-                <h3>${product.name}</h3>
-                <p>$${product.price}</p>
-                <button class="btn-primary" onclick="location.href='shop.html'">Shop Now</button>
+                <button class="btn-primary" onclick="${isHomePage ? `location.href='shop.html'` : `addToCart(${product.id})`}">
+                    ${isHomePage ? "Shop Now" : "Add to Cart"}
+                </button>
             </div>
         </div>
     `).join("");
@@ -48,7 +35,4 @@ function addToCart(id) {
     alert(`Product ${id} added to cart!`);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadProducts();
-    loadFeatured();
-});
+document.addEventListener("DOMContentLoaded", loadProducts);
